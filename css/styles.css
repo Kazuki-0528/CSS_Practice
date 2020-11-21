@@ -1,3 +1,8 @@
-h1 {
-  color: skyblue;
+p {
+  line-height: 5;
+  background-color: aqua;
+}
+
+img {
+  vertical-align: bottom;
 }
