@@ -1,29 +1,21 @@
-.box1 {
-  background-color: aqua;
+.container {
+  display: flex;
+}
+
+.box {
   width: 100px;
   height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
+}
+
+.box1 {
+  background: orange;
+  /* flex: 1; */
 }
 
 .box2 {
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  z-index: 1;
+  background: skyblue;
 }
 
 .box3 {
-  background-color: orange;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 60px;
-  left: 60px;
-  z-index: 2;
+  background: tomato;
 }
