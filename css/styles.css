@@ -1,21 +1,25 @@
+body {
+  margin: 0;
+}
+
+header {
+  background: pink;
+}
+
 .container {
   display: flex;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-}
-
-.box1 {
-  background: orange;
-  /* flex: 1; */
-}
-
-.box2 {
+main {
   background: skyblue;
+  flex: 1;
 }
 
-.box3 {
-  background: tomato;
+aside {
+  background: orange;
+  flex: 1;
+}
+
+footer {
+  background: grey;
 }
