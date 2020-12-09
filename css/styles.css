@@ -15,9 +15,15 @@ main {
   flex: 1;
 }
 
+nav {
+  background-color: tomato;
+  width: 100px;
+  order: -1;
+}
+
 aside {
   background: orange;
-  flex: 1;
+  width: 100px;
 }
 
 footer {
