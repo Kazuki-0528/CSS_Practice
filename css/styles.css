@@ -1,14 +1,13 @@
-header {
+section {
   display: flex;
-  /* justify-content: space-between; */
+  margin-bottom: 60px;
 }
 
-nav {
-  margin-left: auto;
+.pic {
+  width: 180px;
+  margin-right: 32px;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.desc {
+  flex: 1;
 }
