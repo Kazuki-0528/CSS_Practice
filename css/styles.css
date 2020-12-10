@@ -1,19 +1,37 @@
-section {
+body {
+  margin: 0;
+  background: skyblue;
+}
+
+.container {
+  padding: 32px;
+}
+
+.messages {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.messages li {
   display: flex;
-  margin-bottom: 60px;
-  justify-content: space-between;
 }
 
-section:nth-child(even) {
-  flex-direction: row-reverse;
+.messages li + li {
+  margin-top: 32px;
 }
 
-.pic {
-  width: 180px;
-  /* margin-right: 32px; */
+.pic img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
-.desc {
-  /* flex: 1; */
-  width: calc(100% - 180px - 32px);
+.text {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  max-width: 60%;
+  line-height: 1.8;
 }
+
