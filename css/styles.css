@@ -2,21 +2,41 @@ body {
   padding: 64px;
 }
 
-.loading {
-  width: 40px;
-  height: 40px;
-  border: 8px solid #ccc;
-  border-right-color: transparent;
-  border-radius: 50px;
+.message {
+  width: 300px;
+  padding: 8px 16px;
+  background-color: #2c2c2c;
+  color: grey;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
 
-  animation: spin .8s infinite linear;
+  animation: popup 2s forwards;
 }
 
-@keyframes spin {
-  from {
+@keyframes popup {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  20%, 80% {
     transform: none;
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
   }
+}
+
+button {
+  width: 300px;
+  padding: 8px 16px;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
 }
