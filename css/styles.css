@@ -10,12 +10,12 @@
 
 .item1 {
   background-color: pink;
-  width: 100px;
-  /* flex-grow: 1; */
+  width: 1000px;
+  flex-shrink: 3;
 }
 
 .item2 {
   background-color: skyblue;
-  width: 200px;
-  /* flex-grow: 1; */
+  width: 1000px;
+  flex-shrink: 2;
 }
