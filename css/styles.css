@@ -33,10 +33,13 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  body {
+  body, nav, aside {
     width: 100%;
   }
   div {
     flex-direction: column;
+  }
+  main {
+    order: -1;
   }
 }
