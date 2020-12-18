@@ -9,6 +9,7 @@ body {
       "left   center right " 1fr
       "footer footer footer" 200px
       / 150px 1fr 200px;
+  gap: 10px;
 }
 
 header {
