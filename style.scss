@@ -1,19 +1,22 @@
-.parent {
-  color: blue;
+$cBlack: black;
+$cWhite: white;
 
-  & > .element {
-    color: purple;
-
-    & > .second {
-      color: pink;
-    }
-
-    &.second-child {
-      color: black;
-    }
-  }
+#container {
+  text-align: center;
 }
 
-.element {
-  color: red;
+.btn {
+  padding: 10px 40px;
+  margin: 50px;
+  border: 1px solid $cBlack;
+  background-color: $cWhite;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-size: 600;
+
+  &.float {
+    &:hover {
+      box-shadow: 4px 4px 7px 0px $cBlack;
+    }
+  }
 }
