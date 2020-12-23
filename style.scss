@@ -1,22 +1,19 @@
-$cWhite: white;
-$cBlack: rgb(103, 103, 103);
+.parent {
+  color: blue;
 
-#container {
-  text-align: center;
+  & > .element {
+    color: purple;
+
+    & > .second {
+      color: pink;
+    }
+
+    &.second-child {
+      color: black;
+    }
+  }
 }
 
-.btn {
-  background-color: $cWhite;
-  color: black;
-  border: 1px solid $cBlack;
-  padding: 10px 40px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 50px;
-  transition: all 0.2s;
-
-  &:hover {
-    background-color: $cBlack;
-    color: $cWhite;
-  }
+.element {
+  color: red;
 }
