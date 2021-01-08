@@ -3,25 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- <img src="images/image-1.jpg" /> -->
-    <div class="bg-img"></div>
-    <style>
-      .bg-img {
-        height: 500px;
-        background-image: url(images/image-1.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-      }
-    </style>
+    <div class="menu-container">
+      <input type="checkbox" class="toggler" />
+      <div class="humburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <h1>Welcome</h1>
+        <p>Learn CSS</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
   </body>
 </html>

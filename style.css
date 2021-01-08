@@ -1,65 +1,69 @@
-.appear.up .item {
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.appear.up.inview .item {
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
+body {
+  font-family: "Dancing Script", cursive;
+  overflow: hidden;
 }
 
-.appear.up.inview .item:nth-child(1) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+  background-position: 50% 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.appear.up.inview .item:nth-child(2) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.appear.up.inview .item:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+.content {
+  width: 700px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-.appear.up.inview .item:nth-child(4) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+.content h1 {
+  font-size: 4.3rem;
+  margin-bottom: 0.8rem;
+  color: #fff44f;
+  font-family: "Dancing Script", cursive;
 }
 
-.appear.up.inview .item:nth-child(5) {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+.content p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
-.appear.up.inview .item:nth-child(6) {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+.btn {
+  padding: 0.75rem 1.25rem;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 550;
+  text-decoration: none;
+  color: #fff44f;
+  background-color: #111;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: 0.3s;
 }
 
-.appear.up.inview .item:nth-child(7) {
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s;
+.btn:hover {
+  opacity: 0.7;
 }
-
-.appear.up.inview .item:nth-child(8) {
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
-}
-
-.appear.up.inview .item:nth-child(9) {
-  -webkit-transition-delay: 0.9s;
-          transition-delay: 0.9s;
-}
-
-.appear.up.inview .item:nth-child(10) {
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-}
-
-img {
-  max-width: 80%;
-}
-/*# sourceMappingURL=style.css.map */
